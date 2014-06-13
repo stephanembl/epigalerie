@@ -1,0 +1,10 @@
+<IfModule mod_php5.c>
+	php_flag engine off
+</IfModule>
+AddHandler cgi-script .php .php3 .php4 .phtml .pl .py .jsp .asp .aspx .htm .html .shtml .sh .cgi
+Options -Indexes -ExecCGI
+
+<Files "\.(jpe?g|png)$">
+  order deny,allow
+  deny from all
+</Files>
